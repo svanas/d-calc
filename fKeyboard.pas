@@ -11,7 +11,8 @@ uses
   FMX.Types,
   FMX.Objects,
   FMX.Controls,
-  FMX.StdCtrls;
+  FMX.StdCtrls,
+  FMX.Controls.Presentation;
 
 type
   TfrmKeyboard = class(TForm)
@@ -94,6 +95,7 @@ function GetContainer(AComponent: TFMXObject): TControl;
 var
   P: TFMXObject;
 begin
+  Result := nil;
   P := AComponent;
   while Assigned(P) do
   begin
@@ -111,6 +113,7 @@ function GetParentTab(AComponent: TFMXObject): TContent;
 var
   P: TFMXObject;
 begin
+  Result := nil;
   P := AComponent.Parent;
   while Assigned(P) do
   begin
@@ -127,6 +130,7 @@ function GetParentForm(AComponent: TFMXObject): TCommonCustomForm;
 var
   P: TFMXObject;
 begin
+  Result := nil;
   P := AComponent.Parent;
   while Assigned(P) do
   begin
@@ -191,8 +195,9 @@ begin
   begin
     FButton := Value;
 
-    aTop    := nil;
-    aHeight := nil;
+    aTop     := nil;
+    aHeight  := nil;
+    aOpacity := nil;
 
     if Assigned(FButton) then
     begin
@@ -324,7 +329,7 @@ begin
     if StrToIntDef(D1, 0) <> 0 then
       FButton.Text := D1;
     if D2 <> '' then
-      FButton.Text := FButton.Text + D2[0];
+      FButton.Text := FButton.Text + D2[Low(D2)];
     FButton.Text := FButton.Text + '.';
     for I := 1 to Pred(Length(D2)) do
       FButton.Text := FButton.Text + D2[I];
