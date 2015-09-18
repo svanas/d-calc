@@ -1,0 +1,1002 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'd-calc'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object TabControl: TTabControl
+    Align = Client
+    FullSize = True
+    Height = 548.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Bottom
+    Width = 320.000000000000000000
+    OnChange = TabControlChange
+    object tabCalculate: TTabItem
+      CustomIcon.LoadSize = 1
+      CustomIcon = <
+        item
+          Width = 32
+          Height = 32
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            035E494441545847E5964B48546114C7EF9D57A951064DD14EDB942D12758220
+            486A51514110B8A85559504441B40972847C11440F906A1191B6AA88162D92A6
+            A8944A12A4D7C2180885097B80928F86A9719CE977EEFD46D471AEDF242EC23F
+            1CCF39FFF9EE77CE3DDFF9CED558F030959E09666D6DED79F4416495C5E48844
+            2231E0F178EEB85CAED375757509454F814BE90C0483C1FDA833C83F0517107C
+            05EA24891CB6994C644DC034CD72655A181C1C8CA37EEAC8C8C8C86FF404D86B
+            A33233E0513A03A954CACD8369FBB6DFEFAFA68C498B981D664D4D4D33A53F61
+            39A6E9B6D81990B50293C146A11C820B523CD3A66C476825904C2653CAD486EE
+            335A09CC27FE8F0468A222656A831E58A34C47641D44CC812B043EA5DC3124C4
+            6D88D9EEACF0F1EC4EF422DB355A1B1A1A0E297B0A748FC08BEC61D32A4DD9CB
+            FA747047E82690A2AB5F22BDCAB740453E226F956B813511547B7777B7D6B5D5
+            4DE0625353D316466BE9F8F8F877C575BADDEEB2C6C6C60041438A1B664D19E5
+            DE5A5151714E718ED04DE0ABFC611845093A2C366FFE4D0DA71425B77E27B968
+            4F4F8FF53BE857DA115A4D188FC787BC5EEF75FC75B8FB849312979797DFC04C
+            D0F147D1D22782363916D60AE7B7A93936A1CFE72B64C3B398567041201020AE
+            EB1822F33E1D5CB08BB541743AB823748FC0505FB829E3351289C8375EAEE874
+            E85E57BD0428E9FDC2C2C265E812DC519B35C2454545ABA9C04AEC773665FCC1
+            2F439662B7DA9433B41260C3A7345C9C8E0FE37EB659A30B6E0019E216BC1602
+            DD8FFF1E49700C8FAD55B340771286D9FC387E297209DF8CC562BFF2F3F38FC0
+            8FC1DD845B2E0BA95210FF15BA19BD413830E749B8962A3C63C3CBD856D27979
+            794B087217EE01AE155C80DF886A9F14DC11DA4D385FD04DE003A5DECC5B55A7
+            47ACCC062AB01B7E07EE0FE1808C6CB9969B184A5D36E50CDD5B709551DC595F
+            5FDFC2FDB73A9EC1F490A66C837FC2EFF7AC8586D18B7F8DF3EEE2C8E4B86685
+            561312E01123F8006F57128D469F171414E443F711641B3AC1DB8658BB1E7B8C
+            35DBF91E74C3DD82AB92E741EE4DC8C3E3CA145B4A2D33FE8D0A2E2886EB43BE
+            A8E0022F49BD801B9D145C5E6062AFE9704A40EB0C35D1A97406B2FEBFDED1D1
+            F1A9B2B272316631226F20A3385791466D0987C317F84AE6FC9FF5428061FC05
+            0B157B69553FC93C0000000049454E44AE426082}
+          FileName = 'C:\Users\svanas\Desktop\32x32\32x32\calculate1.png'
+        end>
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'Calculate'
+      Width = 107.000000000000000000
+      object rctGlucose: TRoundRect
+        Fill.Color = claGhostwhite
+        Height = 40.000000000000000000
+        HitTest = False
+        Position.X = 110.000000000000000000
+        Position.Y = 117.000000000000000000
+        Stroke.Color = xFF007AFF
+        Width = 100.000000000000000000
+        object btnGlucose: TButton
+          Align = Client
+          StyledSettings = [Family]
+          Height = 40.000000000000000000
+          Locked = True
+          TabOrder = 0
+          Text = '0.0'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claDarkred
+          Width = 100.000000000000000000
+          OnClick = btnGlucoseClick
+        end
+      end
+      object lblGlucose1: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 129.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = 'Glucose:'
+        Width = 97.000000000000000000
+      end
+      object lblUnits: TLabel
+        StyledSettings = [Family, FontColor]
+        Height = 80.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 32.000000000000000000
+        TextSettings.Font.Size = 60.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        Text = '0'
+        Width = 304.000000000000000000
+      end
+      object Line1: TLine
+        Height = 1.000000000000000000
+        LineType = Top
+        Position.X = 8.000000000000000000
+        Position.Y = 106.000000000000000000
+        Width = 304.000000000000000000
+      end
+      object rctCarbs: TRoundRect
+        Fill.Color = claGhostwhite
+        Height = 40.000000000000000000
+        HitTest = False
+        Position.X = 110.000000000000000000
+        Position.Y = 165.000000000000000000
+        Stroke.Color = xFF007AFF
+        Width = 100.000000000000000000
+        object btnCarbs: TButton
+          Align = Client
+          StyledSettings = [Family]
+          Height = 40.000000000000000000
+          Locked = True
+          TabOrder = 0
+          Text = '0'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claNull
+          Width = 100.000000000000000000
+          OnClick = btnCarbsClick
+          OnMouseDown = btnCarbsMouseDown
+          OnMouseUp = btnCarbsMouseUp
+        end
+      end
+      object lblCarbs1: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 177.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = 'Carbohydrates:'
+        Width = 97.000000000000000000
+      end
+      object lblGlucose2: TLabel
+        AutoSize = True
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 129.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = 'mmol/l'
+        Width = 39.000000000000000000
+      end
+      object lblCarbs2: TLabel
+        AutoSize = True
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 177.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = 'grams'
+        Width = 33.000000000000000000
+      end
+      object rctExercise: TRoundRect
+        Fill.Color = claGhostwhite
+        Height = 40.000000000000000000
+        HitTest = False
+        Position.X = 110.000000000000000000
+        Position.Y = 213.000000000000000000
+        Stroke.Color = xFF007AFF
+        Width = 100.000000000000000000
+        object btnExercise: TButton
+          Align = Client
+          StyledSettings = [Family]
+          Height = 40.000000000000000000
+          Locked = True
+          TabOrder = 0
+          Text = '0'
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = claNull
+          Width = 100.000000000000000000
+          OnClick = btnExerciseClick
+        end
+      end
+      object lblExercise1: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 225.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = 'Exercise:'
+        Width = 97.000000000000000000
+      end
+      object lblExercise2: TLabel
+        AutoSize = True
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 225.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = '%'
+        Width = 10.000000000000000000
+      end
+      object cExercise: TCircle
+        Fill.Color = claNull
+        Height = 26.000000000000000000
+        Position.X = 276.000000000000000000
+        Position.Y = 220.000000000000000000
+        Stroke.Color = xFF595858
+        Width = 26.000000000000000000
+        object pExercise: TPie
+          Align = Client
+          Fill.Color = xFF595858
+          Height = 26.000000000000000000
+          Stroke.Color = xFF595858
+          Width = 26.000000000000000000
+          StartAngle = -90.000000000000000000
+          EndAngle = -90.000000000000000000
+          object aniExercise: TFloatAnimation
+            Duration = 0.200000002980232200
+            PropertyName = 'EndAngle'
+            StartValue = 0.000000000000000000
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object rctInsulin: TRoundRect
+        Fill.Color = claGhostwhite
+        Height = 40.000000000000000000
+        HitTest = False
+        Position.X = 110.000000000000000000
+        Position.Y = 261.000000000000000000
+        Stroke.Color = xFF007AFF
+        Width = 100.000000000000000000
+        object cboInsulin: TComboBox
+          Align = VertCenter
+          DisableFocusEffect = False
+          Height = 30.000000000000000000
+          Opacity = 0.000000000000000000
+          Position.Y = 5.000000000000000000
+          TabOrder = 0
+          Width = 100.000000000000000000
+          OnChange = cboInsulinChange
+        end
+        object lblInsulinName: TLabel
+          Align = VertCenter
+          AutoTranslate = False
+          StyledSettings = [Family]
+          Locked = True
+          Height = 21.000000000000000000
+          Position.Y = 9.000000000000000000
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.FontColor = xFF007AFF
+          TextSettings.HorzAlign = Center
+          Width = 100.000000000000000000
+        end
+      end
+      object lblInsulin: TLabel
+        StyledSettings = [Family, Style, FontColor]
+        Height = 16.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 273.000000000000000000
+        TextSettings.HorzAlign = Trailing
+        TextSettings.WordWrap = False
+        Text = 'Insulin:'
+        Width = 97.000000000000000000
+      end
+      object TB: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 14
+        Width = 320.000000000000000000
+        object btnAuto: TSpeedButton
+          StaysPressed = True
+          Align = MostLeft
+          GroupName = 'TOD'
+          Height = 29.000000000000000000
+          IsPressed = True
+          Margins.Left = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          StyleLookup = 'toolbuttonleft'
+          Text = 'Automatic'
+          Width = 76.000000000000000000
+          OnClick = tbClick
+        end
+        object btnMorning: TSpeedButton
+          StaysPressed = True
+          Align = Left
+          GroupName = 'TOD'
+          Height = 29.000000000000000000
+          Position.X = 84.000000000000000000
+          Position.Y = 8.000000000000000000
+          StyleLookup = 'toolbuttonmiddle'
+          Text = 'Morning'
+          Width = 76.000000000000000000
+          OnClick = tbClick
+        end
+        object btnDay: TSpeedButton
+          StaysPressed = True
+          Align = Right
+          GroupName = 'TOD'
+          Height = 29.000000000000000000
+          Position.X = 160.000000000000000000
+          Position.Y = 8.000000000000000000
+          StyleLookup = 'toolbuttonmiddle'
+          Text = 'Day'
+          Width = 76.000000000000000000
+          OnClick = tbClick
+        end
+        object btnEvening: TSpeedButton
+          StaysPressed = True
+          Align = MostRight
+          GroupName = 'TOD'
+          Height = 29.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 236.000000000000000000
+          Position.Y = 8.000000000000000000
+          StyleLookup = 'toolbuttonright'
+          Text = 'Evening'
+          Width = 76.000000000000000000
+          OnClick = tbClick
+        end
+      end
+      object pnlBottom: TPanel
+        Align = Bottom
+        Height = 82.000000000000000000
+        Position.Y = 417.000000000000000000
+        Width = 320.000000000000000000
+        TabOrder = 15
+        object rctDiabetesDiary: TRoundRect
+          Fill.Color = claGhostwhite
+          Height = 40.000000000000000000
+          HitTest = False
+          Position.X = 86.000000000000000000
+          Stroke.Color = xFF007AFF
+          Width = 192.000000000000000000
+          object btnDiabetesDiary: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Height = 40.000000000000000000
+            Locked = True
+            TabOrder = 0
+            Text = 'Send to Diabetes Diary'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.Style = [fsBold]
+            TextSettings.FontColor = claNull
+            Width = 192.000000000000000000
+            OnClick = btnDiabetesDiaryClick
+          end
+        end
+        object imgDiabetesDiary: TImage
+          MultiResBitmap = <
+            item
+            end>
+          Height = 40.000000000000000000
+          Position.X = 42.000000000000000000
+          Width = 40.000000000000000000
+        end
+        object lblIOB: TLabel
+          StyledSettings = [Family, Style]
+          Height = 21.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 57.000000000000000000
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.FontColor = xFF595858
+          TextSettings.HorzAlign = Center
+          Text = 'Insulin On Board: 0 units (00:00 hrs remaining)'
+          Width = 304.000000000000000000
+        end
+        object Line2: TLine
+          Height = 1.000000000000000000
+          LineType = Top
+          Position.X = 8.000000000000000000
+          Position.Y = 52.000000000000000000
+          Width = 304.000000000000000000
+        end
+      end
+      object tmrClipboard: TTimer
+        Enabled = False
+        OnTimer = tmrClipboardTimer
+      end
+    end
+    object tabIOB: TTabItem
+      CustomIcon.LoadSize = 1
+      CustomIcon = <
+        item
+          Width = 32
+          Height = 32
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            04A8494441545847ED975B689C5510C7F796CAB6B1C6A24694AC69ED2ADA5AA9
+            6E5BC53C54C578A30F4522582CA54A1FB444099636F7907BF4C188171AA30F35
+            1241B6C68782D0606B3114AD467B41B48AB42651D068AC6C4A366677B3FEE67C
+            D3CFEFDBAC4DEC4644F00F93993367E6CC9CF3CD99B3F1FC8F7F1B7EE559D1D0
+            D0102A2929593C30301053D5BCC3ABDC465D5DDDC6743ABDCDEBF546185E2EBA
+            6432391A08040611BB9A9B9BF7896EBE602750595979695E5EDECB889B868787
+            934545455F207F6A263D9E352323232B43A15080E4DE24A1A73B3A3ACEE85C4E
+            F0C99FF2F2F28B083E80B809EA2F2E2EBEB6A5A565F5E8E8E87621914527739C
+            CC66B1151FF1CD15268182828246D80A76F71C477C6F6363E3B0E80B0B0B9F10
+            12597432273662AB3E39C3575B5B7B137C07749CDDD61AED9F58021558A205B5
+            390EED50DF9C2027701F24B7A1AABBBB3B21CA7360B717C3165A230B6A530589
+            8FF8E6049F567BDAE7F37D64A95C082BB9A0B669F5CD095E8EF16B76BAA0B5B5
+            75A9EA0CE8018BA7A7A77F43F412304C0D7C6BCD58A8A9A939CDFC42AEA714E3
+            29E48DAC3164CDCE1D7202DF13A0908001D51910509ACF7EB9922CDE5B515111
+            B4664C7201F1C137C9F0126835E387CCE4DF8404FD0CBA0B5A091D836C50F5F7
+            D398D621EECBCFCFEF81979909CB36E8F7FB9D1D7281FCE1644A49E616A37123
+            86BE8F8DFDA8630329C22322D05CB609CF04491CE1046E473C6D695CB6972937
+            E0645611643F627B167A85758E91A0F4131BDEB2B2327F381C3ECC6ED632BE9B
+            801F5853D9C189DC093B00FD029956ADA8A2964EF259DED5715660738258EB38
+            894919FBA2D1688AACB7C462B1DF1389C45E8A52BA6156C89CD88C8D8DC95574
+            06CF0A826D65435E216214A1FA810457A552A9172D0BC75BC0CEDE863D082D82
+            FA717E0F326F014E6BA007104BE3F1F8D96030283DC02E4AC58C13900468E37B
+            74684E6F7070F0FD482422C5FF68535353AF69C50AF9C68BE4E5839762F00259
+            1F16125974D04F04CF8767069F13E4F312FC5991272626BAA887A5CE040CB8D7
+            57A8E8E1B87F858D4169A3E079507EC16043F5B04F74233B9D9FA003B6CB1A5D
+            10B215E17602BEA5B20D6A60BDDA0DCD388179865CBD3399E448F29A7F3A8159
+            F19F48200EF543729C07E80153463B37FC4C5DBC037F1592963F03AE07280B0E
+            12F431E72B47BBBD0EDD1B88B7599ABFC46E0A70271DEFAC8EA5D0EFA1007BE8
+            8457AACAD588326FC1572C20ED7909019F64271B289E287D6237BA69AEEB51F8
+            D562A8B06F013C4A037AB8BABA3AC21A4FA1BB91355EE3EEF770FD6E26810FB1
+            CF1327FB13E0744245031C5E92ECE17D0C77C922F00602EF696F6F97A39563B5
+            81DDE72C2C6BA4A066F9952D81F0DBCCF85612E9E2457DA6ADADED63C6E7DE9B
+            A3AEFF0BC8782D8657898CF321D83216CEFC76F2EB69F9D4D4D438367788027E
+            8A64CD06F844C5C8DFF16E5410FC79D1393084EF323EC3F5CC2D9F9C9C3CE44A
+            2013FABD4F223AED122C122288EB5DCF447D7DFDE39CD2EB3A3460FC259F6685
+            0E0DCE7B0B08F20D091CD4A1018BEC9D2DB8607C7C5C3AA0B4711BEC5AEAC785
+            59AF2185B381A05B11FBE08FF0B37C8B35737E747676C629D81B106BF0EB85AF
+            E73192FFBC1CF078FE00E90B17B9EC6CEFA00000000049454E44AE426082}
+          FileName = 'C:\Users\svanas\Desktop\32x32\32x32\IOB2.png'
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'Insulin On Board'
+      Width = 107.000000000000000000
+      object lblEmptyIOB: TLabel
+        Align = Center
+        AutoSize = True
+        Height = 23.000000000000000000
+        TextSettings.WordWrap = False
+        Text = 'You have no Insulin On Board'
+        Width = 223.000000000000000000
+      end
+      object lvIOB: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TCustomizeItemObjects'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        AllowSelection = False
+        Align = Client
+        Height = 499.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.TextAlign = Trailing
+        ItemAppearanceObjects.ItemObjects.Detail.Visible = True
+        OnDeleteItem = lvIOBDeleteItem
+      end
+    end
+    object tabSettings1: TTabItem
+      CustomIcon.LoadSize = 1
+      CustomIcon = <
+        item
+          Width = 32
+          Height = 32
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0486494441545847AD966B685C5510C76F36AFA569566A25E9078D4A635448C5
+            CA56114463AD50045B5311FD602CA204C447951242371BE39A045AE3A328284A
+            F5431BAC182C3588A245B1B5BE905831B021FA213108B12D21216D5E269BF89B
+            73666FEEDD2478B7D93F0CF338E79E993333E79C9BE7E418F1787CD3C2C2427D
+            4141C1814422F1B7D85A5A5AAE989F9F7F29140ABD87ED77335111529E33E4E5
+            E51DC5D133A954EAA09A1C9CBF067B1AFEB9B52C22E701B0FB9F8413C883CDCD
+            CD5F4327501FD3B11F847B91D300487508C7EB54156C85B659D16089BF55F740
+            2C168BE6E7E71FD3DD850960A71D59119DD034F3EFE4BB87F3ADEDD251535313
+            87DD83E36AE8066B353803BD027D89B30D8C6D3056C7B909BA057D3DF6D4AA4B
+            303737D702FBD06A2ECED088DB5A5B5B0F0A3147CAD06B875C74D3940772760C
+            69B6EF607788CCC2CFB5B7B7BF25721A8C3F0F7BC36ACEB70476B708B96C4277
+            2D769F527125CC295F7D133635355D8DC3371177588BE37007FC3C3B3B7B6F47
+            47C705D11B1B1B2FA3E14E405BCC048BC37CB777D50170F31DA2A19E50D50B39
+            1547ACE83C0EDD6AC54550AAB7FF370039DBECA80F27C5A8BF50BB87EC8805B5
+            BD8D6E3ECCB8388C40BBCCC0CA90239BC2F9EDC8B54102A864F29FAA8E12C0E5
+            2A2F81067B8C6096BD0B70FC495B5B9B6C60C15A329A90DDEC24A58FAA6AC082
+            D52A0AD651F3AB54360E99DF08BF59741E9A799CCF9A418BD304FFBDCA723D4B
+            4FB8CE056E06586817133E422C24D2239CDD3DBC6872C1C4B06D36932CBAA157
+            69A001E674C2EF421F816F95978E4DFC835E0E7592AD3AB8AC2D59A965DD3FC8
+            C0F5624BC39B81FBA04211985C373C3C7C0EDE85EA752E906E3F35383838A0CE
+            05EBD9A9DCFB825AE8034E819C7B03C69EC5F9FBF0DD6A72E1668034AE65C26F
+            881BAD252B7CC36EE5B6F3A53708DC0C90BE8BB0A7ACB614434343EEE5E185D8
+            C984EC2C6BE782CC9B7093F23464D177C84CE5E4E4641847528ECFCC88A2A2A2
+            A280F16B55CD1AA604F5F5F58565656595D4A91B27956604A0EFA769F6A9EA82
+            A6EAA63FEE5755200F8BDCFF7FA91E1821BA36595E5E3EC18249AFF3F1F1F169
+            AECE84AA3E607F51C53476F0ED206B8D13DCC76A0B0429C18D90E97E2F229148
+            1F7D31ADAA0FC964B277859E286523F2DE07466862626252651F66666636CA45
+            A3AA0F555555D748ED55CD84347360844A01E9BB8E7ACBF93D6BCD8E535C5C1C
+            A1AE4FAA9A09F78C0B98F7236C3BB7E6951CC7A8B50683EF2DA0862F0BB39AE3
+            48764A4A4A5E20C04372CD9291304E9A7A7A7A62D168D49B9D0770FCA9CA59C1
+            976276F2958A06385F037B776A6A6A94E07E1D1B1B1BA5C671AF73BD074EAA9A
+            35DC85E4285286D755F541CA01DB4C6386AD6511D20B64457E482E096E001CC5
+            44C61F4B6090953A8E9FEF150D0A6F09CE294F3795FC60B643E7C5E6419F5C3A
+            F0EDD08018464646FE858D899C2D7C4DC82EF6C0D6F6F7F7EFEFEAEA323F96D8
+            1E618747451650A62A6E47F383D2D0D0505A5454244FF3719AF00B33214BF802
+            580E747E353B36FFF4722AE4D8CA8930833980EF142C07FE0BFA61E62F271C0E
+            F7E6D2B9E338CE7F8703D2B8CDBA59970000000049454E44AE426082}
+          FileName = 'C:\Users\svanas\Desktop\32x32\32x32\settings2.png'
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'Settings'
+      Width = 106.000000000000000000
+      object tabSettings2: TTabControl
+        Align = Client
+        FullSize = True
+        Height = 499.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 2
+        TabOrder = 0
+        TabPosition = None
+        Width = 320.000000000000000000
+        object tabInsulins: TTabItem
+          CustomIcon = <
+            item
+            end>
+          Height = 8.000000000000000000
+          IsSelected = False
+          TabOrder = 0
+          Text = 'tabInsulins'
+          Width = 8.000000000000000000
+          object tbInsulins: TToolBar
+            Height = 44.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            object btnBack1: TSpeedButton
+              Align = Left
+              Height = 44.000000000000000000
+              Margins.Left = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              StyleLookup = 'backtoolbutton'
+              Text = 'Back'
+              Width = 73.000000000000000000
+              OnClick = btnBack1Click
+            end
+            object btnAdd: TSpeedButton
+              Align = Right
+              Height = 44.000000000000000000
+              Position.X = 276.000000000000000000
+              StyleLookup = 'addtoolbutton'
+              Text = 'btnAdd'
+              Width = 44.000000000000000000
+              OnClick = btnAddClick
+            end
+          end
+          object lvInsulins: TListView
+            ItemAppearanceClassName = 'TImageListItemBottomDetailAppearance'
+            ItemEditAppearanceClassName = 'TImageListItemBottomDetailShowCheckAppearance'
+            HeaderAppearanceClassName = 'TListHeaderObjects'
+            FooterAppearanceClassName = 'TListHeaderObjects'
+            Align = Client
+            Height = 455.000000000000000000
+            TabOrder = 1
+            Width = 320.000000000000000000
+            OnItemClick = lvInsulinsItemClick
+            OnDeleteItem = lvInsulinsDeleteItem
+            OnDeleteChangeVisible = lvInsulinsDeleteChangeVisible
+          end
+        end
+        object tabInsulin: TTabItem
+          CustomIcon = <
+            item
+            end>
+          Height = 8.000000000000000000
+          IsSelected = False
+          TabOrder = 0
+          Text = 'tabInsulin'
+          Width = 8.000000000000000000
+          object tbInsulin: TToolBar
+            Height = 44.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            object btnBack2: TSpeedButton
+              Align = Left
+              Height = 44.000000000000000000
+              Margins.Left = 8.000000000000000000
+              Position.X = 8.000000000000000000
+              StyleLookup = 'backtoolbutton'
+              Text = 'Back'
+              Width = 73.000000000000000000
+              OnClick = btnBack2Click
+            end
+          end
+          object edtName: TClearingEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 1
+            Position.X = 160.000000000000000000
+            Position.Y = 52.000000000000000000
+            Width = 152.000000000000000000
+            Height = 30.000000000000000000
+            KillFocusByReturn = True
+          end
+          object lblName: TLabel
+            Height = 21.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 57.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Insulin name:'
+            Width = 145.000000000000000000
+          end
+          object edtDuration: TClearingEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 3
+            KeyboardType = NumberPad
+            Position.X = 160.000000000000000000
+            Position.Y = 90.000000000000000000
+            Width = 152.000000000000000000
+            Height = 30.000000000000000000
+          end
+          object lblDuration: TLabel
+            Height = 21.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 95.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Duration (minutes):'
+            Width = 145.000000000000000000
+          end
+        end
+        object tabGeneral: TTabItem
+          CustomIcon = <
+            item
+            end>
+          Height = 8.000000000000000000
+          IsSelected = True
+          StyleLookup = 'tabitemcustom'
+          TabOrder = 0
+          Width = 8.000000000000000000
+          object LB: TListBox
+            Align = Client
+            Height = 499.000000000000000000
+            TabOrder = 0
+            Width = 320.000000000000000000
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            object lbgTarget: TListBoxGroupHeader
+              Selectable = False
+              StyledSettings = [Family, FontColor, Other]
+              Height = 22.000000000000000000
+              TabOrder = 6
+              Text = 'Target (mmol/l)'
+              Width = 315.000000000000000000
+            end
+            object lbiTarget1: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 22.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 2
+              Text = 'Morning'
+              Width = 315.000000000000000000
+              object edtTarget1: TClearingEdit
+                Tag = 1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtTarget1Exit
+              end
+            end
+            object lbiTarget2: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 66.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 3
+              Text = 'Day'
+              Width = 315.000000000000000000
+              object edtTarget2: TClearingEdit
+                Tag = 1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtTarget2Exit
+              end
+            end
+            object lbiTarget3: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 110.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 4
+              Text = 'Evening'
+              Width = 315.000000000000000000
+              object edtTarget3: TClearingEdit
+                Tag = 1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtTarget3Exit
+              end
+            end
+            object lbgCarbF: TListBoxGroupHeader
+              Selectable = False
+              StyledSettings = [Family, Style, FontColor, Other]
+              Height = 22.000000000000000000
+              Position.Y = 154.000000000000000000
+              TabOrder = 7
+              Text = 'Carbohydrate Factor'
+              Width = 315.000000000000000000
+            end
+            object lbiCarb1: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 176.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 8
+              Text = 'Morning'
+              Width = 315.000000000000000000
+              object edtCarb1: TClearingEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtCarbExit
+              end
+            end
+            object lbiCarb2: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 220.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 9
+              Text = 'Day'
+              Width = 315.000000000000000000
+              object edtCarb2: TClearingEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtCarbExit
+              end
+            end
+            object lbiCarb3: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 264.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 10
+              Text = 'Evening'
+              Width = 315.000000000000000000
+              object edtCarb3: TClearingEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtCarbExit
+              end
+            end
+            object lbgCorrF: TListBoxGroupHeader
+              Selectable = False
+              StyledSettings = [Family, Style, FontColor, Other]
+              Height = 22.000000000000000000
+              Position.Y = 308.000000000000000000
+              TabOrder = 11
+              Text = 'Correction Factor'
+              Width = 315.000000000000000000
+            end
+            object lbiCorr1: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 330.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 12
+              Text = 'Morning'
+              Width = 315.000000000000000000
+              object edtCorr1: TClearingEdit
+                Tag = 1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtCorrExit
+              end
+            end
+            object lbiCorr2: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 374.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 13
+              Text = 'Day'
+              Width = 315.000000000000000000
+              object edtCorr2: TClearingEdit
+                Tag = 1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtCorrExit
+              end
+            end
+            object lbiCorr3: TListBoxItem
+              Selectable = False
+              TextSettings.FontColor = xFF595858
+              StyledSettings = [Family, Size, Style, Other]
+              Height = 44.000000000000000000
+              Position.Y = 418.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 14
+              Text = 'Evening'
+              Width = 315.000000000000000000
+              object edtCorr3: TClearingEdit
+                Tag = 1
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = MostRight
+                TabOrder = 0
+                KeyboardType = NumbersAndPunctuation
+                Position.X = 232.000000000000000000
+                Width = 75.000000000000000000
+                Height = 44.000000000000000000
+                Margins.Right = 8.000000000000000000
+                KillFocusByReturn = True
+                OnKeyDown = edtKeyDown
+                OnExit = edtCorrExit
+              end
+            end
+            object lgbOther: TListBoxGroupHeader
+              Selectable = False
+              StyledSettings = [Family, Style, FontColor, Other]
+              Height = 22.000000000000000000
+              Position.Y = 462.000000000000000000
+              TabOrder = 5
+              Text = 'Other'
+              Width = 315.000000000000000000
+            end
+            object lbiInsulins: TListBoxItem
+              Height = 44.000000000000000000
+              ItemData.Accessory = aMore
+              Position.Y = 484.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 15
+              Text = 'Insulins'
+              Width = 315.000000000000000000
+              OnClick = lbiInsulinsClick
+            end
+            object lbiIOB: TListBoxItem
+              Selectable = False
+              Height = 44.000000000000000000
+              Position.Y = 528.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 0
+              Text = 'Insulin On Board'
+              Width = 315.000000000000000000
+              object chkIOB: TSwitch
+                Align = MostRight
+                Height = 44.000000000000000000
+                IsChecked = False
+                Margins.Right = 6.000000000000000000
+                Position.X = 254.000000000000000000
+                TabOrder = 0
+                Width = 55.000000000000000000
+                OnSwitch = chkIOBSwitch
+              end
+            end
+            object lbiAppBadge: TListBoxItem
+              Selectable = False
+              Height = 44.000000000000000000
+              Position.Y = 572.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 16
+              Text = 'Application Badge'
+              Width = 315.000000000000000000
+              object chkAppBadge: TSwitch
+                Align = MostRight
+                Height = 44.000000000000000000
+                IsChecked = False
+                Margins.Right = 6.000000000000000000
+                Position.X = 254.000000000000000000
+                TabOrder = 0
+                Width = 55.000000000000000000
+                OnSwitch = chkAppBadgeSwitch
+              end
+            end
+            object lbiAnimations: TListBoxItem
+              Selectable = False
+              Height = 44.000000000000000000
+              Position.Y = 616.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              TabOrder = 1
+              Text = 'Keyboard Animations'
+              Width = 315.000000000000000000
+              object chkAnimations: TSwitch
+                Align = MostRight
+                Height = 44.000000000000000000
+                IsChecked = False
+                Margins.Right = 6.000000000000000000
+                Position.X = 254.000000000000000000
+                TabOrder = 0
+                Width = 55.000000000000000000
+                OnSwitch = chkAnimationsSwitch
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+  object tmrWarning: TTimer
+    Enabled = False
+    OnTimer = tmrWarningTimer
+    Left = 56
+  end
+  object NC: TNotificationCenter
+    Left = 28
+  end
+end

@@ -1,0 +1,298 @@
+object frmKeyboard: TfrmKeyboard
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object pnlCallout: TCalloutPanel
+    Height = 548.000000000000000000
+    Padding.Top = 11.000000000000000000
+    Position.X = 6.000000000000000000
+    Visible = False
+    Width = 308.000000000000000000
+    TabOrder = 1
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    object aniTop: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Position.Y'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object aniHeight: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Height'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object aniOpacity: TFloatAnimation
+      Duration = 0.200000002980232200
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 0.000000000000000000
+    end
+    object rct1: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 8.000000000000000000
+      Position.Y = 20.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn1: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '1'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct2: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 107.000000000000000000
+      Position.Y = 20.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn2: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '2'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct3: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 206.000000000000000000
+      Position.Y = 20.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn3: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '3'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct4: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 8.000000000000000000
+      Position.Y = 68.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn4: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '4'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct5: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 107.000000000000000000
+      Position.Y = 68.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn5: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '5'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct6: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 206.000000000000000000
+      Position.Y = 68.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn6: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '6'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct7: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 8.000000000000000000
+      Position.Y = 116.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn7: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '7'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct8: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 107.000000000000000000
+      Position.Y = 116.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn8: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '8'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rct9: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 206.000000000000000000
+      Position.Y = 116.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn9: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '9'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rctAC: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 8.000000000000000000
+      Position.Y = 164.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btnAC: TButton
+        Align = Client
+        StyledSettings = [Family]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = 'AC'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claDarkred
+        Width = 94.000000000000000000
+        OnClick = btnACClick
+      end
+    end
+    object rct0: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 107.000000000000000000
+      Position.Y = 164.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btn0: TButton
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = '0'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        Width = 94.000000000000000000
+        OnClick = btnNumClick
+      end
+    end
+    object rctOK: TRoundRect
+      Fill.Color = claGhostwhite
+      Height = 40.000000000000000000
+      HitTest = False
+      Position.X = 206.000000000000000000
+      Position.Y = 164.000000000000000000
+      Stroke.Color = xFF007AFF
+      Width = 94.000000000000000000
+      object btnOK: TButton
+        Align = Client
+        StyledSettings = [Family]
+        Height = 40.000000000000000000
+        Locked = True
+        TabOrder = 0
+        Text = 'OK'
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.FontColor = claDarkgreen
+        Width = 94.000000000000000000
+        OnClick = btnOKClick
+      end
+    end
+  end
+end
