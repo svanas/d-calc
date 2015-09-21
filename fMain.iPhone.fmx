@@ -1,10 +1,8 @@
-inherited frmMain_iPhone47in: TfrmMain_iPhone47in
-  ClientHeight = 647
-  ClientWidth = 375
+inherited frmMain_iPhone: TfrmMain_iPhone
+  ClientHeight = 460
   DesignerMasterStyle = 2
   inherited TabControl: TTabControl
-    Size.Width = 375.000000000000000000
-    Size.Height = 647.000000000000000000
+    Size.Height = 460.000000000000000000
     inherited tabCalculate: TTabItem
       CustomIcon.LoadSize = 1
       CustomIcon = <
@@ -44,84 +42,10 @@ inherited frmMain_iPhone47in: TfrmMain_iPhone47in
             A27D7B81C17299310000000049454E44AE426082}
           FileName = 'C:\Users\svanas\Desktop\32x32\32x32\calculate1.png'
         end>
-      Size.Width = 125.000000000000000000
       ExplicitSize.cx = 50.000000000000000000
       ExplicitSize.cy = 49.000000000000000000
-      inherited rctGlucose: TRoundRect
-        Position.X = 137.000000000000000000
-      end
-      inherited lblGlucose1: TLabel
-        Size.Width = 121.000000000000000000
-      end
-      inherited lblUnits: TLabel
-        Size.Width = 359.000000000000000000
-      end
-      inherited Line1: TLine
-        Size.Width = 359.000000000000000000
-      end
-      inherited rctCarbs: TRoundRect
-        Position.X = 137.000000000000000000
-      end
-      inherited lblCarbs1: TLabel
-        Size.Width = 121.000000000000000000
-      end
-      inherited lblGlucose2: TLabel
-        Position.X = 245.000000000000000000
-      end
-      inherited lblCarbs2: TLabel
-        Position.X = 245.000000000000000000
-      end
-      inherited rctExercise: TRoundRect
-        Position.X = 137.000000000000000000
-      end
-      inherited lblExercise1: TLabel
-        Size.Width = 121.000000000000000000
-      end
-      inherited lblExercise2: TLabel
-        Position.X = 245.000000000000000000
-      end
-      inherited cExercise: TCircle
-        Position.X = 338.000000000000000000
-      end
-      inherited rctInsulin: TRoundRect
-        Position.X = 137.000000000000000000
-      end
-      inherited lblInsulin: TLabel
-        Size.Width = 121.000000000000000000
-      end
-      inherited TB: TToolBar
-        Size.Width = 375.000000000000000000
-        inherited btnAuto: TSpeedButton
-          Size.Width = 90.000000000000000000
-        end
-        inherited btnMorning: TSpeedButton
-          Position.X = 98.000000000000000000
-          Size.Width = 90.000000000000000000
-        end
-        inherited btnDay: TSpeedButton
-          Position.X = 188.000000000000000000
-          Size.Width = 89.000000000000000000
-        end
-        inherited btnEvening: TSpeedButton
-          Position.X = 277.000000000000000000
-          Size.Width = 90.000000000000000000
-        end
-      end
       inherited pnlBottom: TPanel
-        Position.Y = 516.000000000000000000
-        Size.Width = 375.000000000000000000
-        inherited rctDiabetesDiary: TRoundRect
-          Position.X = 113.000000000000000000
-        end
-        inherited imgDiabetesDiary: TImage
-          Position.X = 69.000000000000000000
-        end
-        inherited lblIOB: TLabel
-          Size.Width = 359.000000000000000000
-        end
-        inherited Line2: TLine
-          Size.Width = 359.000000000000000000
-        end
+        Position.Y = 329.000000000000000000
       end
     end
     inherited tabIOB: TTabItem
@@ -173,7 +97,6 @@ inherited frmMain_iPhone47in: TfrmMain_iPhone47in
             3C46F29F97031ECF1F875A17D18926C4DB0000000049454E44AE426082}
           FileName = 'C:\Users\svanas\Desktop\32x32\32x32\IOB2.png'
         end>
-      Size.Width = 125.000000000000000000
       ExplicitSize.cx = 50.000000000000000000
       ExplicitSize.cy = 49.000000000000000000
     end
@@ -225,7 +148,6 @@ inherited frmMain_iPhone47in: TfrmMain_iPhone47in
             F764D3B9E338CE7FD63BD2D0E6FCE2DB0000000049454E44AE426082}
           FileName = 'C:\Users\svanas\Desktop\32x32\32x32\settings2.png'
         end>
-      Size.Width = 125.000000000000000000
       ExplicitSize.cx = 50.000000000000000000
       ExplicitSize.cy = 49.000000000000000000
       inherited tabSettings2: TTabControl
@@ -238,121 +160,70 @@ inherited frmMain_iPhone47in: TfrmMain_iPhone47in
         inherited tabInsulin: TTabItem
           ExplicitSize.cx = 50.000000000000000000
           ExplicitSize.cy = 50.000000000000000000
-          inherited edtName: TEdit
-            Position.X = 223.000000000000000000
-          end
-          inherited lblName: TLabel
-            Size.Width = 207.000000000000000000
-          end
-          inherited edtDuration: TEdit
-            Position.X = 223.000000000000000000
-          end
-          inherited lblDuration: TLabel
-            Size.Width = 207.000000000000000000
-          end
         end
         inherited tabGeneral: TTabItem
           ExplicitSize.cx = 50.000000000000000000
           ExplicitSize.cy = 50.000000000000000000
           inherited LB: TListBox
-            Viewport.Width = 370.000000000000000000
-            Viewport.Height = 598.000000000000000000
-            inherited lbgTarget: TListBoxGroupHeader
-              Size.Width = 370.000000000000000000
-            end
+            Viewport.Width = 315.000000000000000000
+            Viewport.Height = 411.000000000000000000
             inherited lbiTarget1: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtTarget1: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiTarget2: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtTarget2: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiTarget3: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtTarget3: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
-            inherited lbgCarbF: TListBoxGroupHeader
-              Size.Width = 370.000000000000000000
-            end
             inherited lbiCarb1: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtCarb1: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiCarb2: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtCarb2: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiCarb3: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtCarb3: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
-            inherited lbgCorrF: TListBoxGroupHeader
-              Size.Width = 370.000000000000000000
-            end
             inherited lbiCorr1: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtCorr1: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiCorr2: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtCorr2: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiCorr3: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited edtCorr3: TEdit
-                Position.X = 287.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
-            inherited lgbOther: TListBoxGroupHeader
-              Size.Width = 370.000000000000000000
-            end
-            inherited lbiInsulins: TListBoxItem
-              Size.Width = 370.000000000000000000
-            end
             inherited lbiIOB: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited chkIOB: TSwitch
-                Position.X = 309.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiAppBadge: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited chkAppBadge: TSwitch
-                Position.X = 309.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end
             inherited lbiAnimations: TListBoxItem
-              Size.Width = 370.000000000000000000
               inherited chkAnimations: TSwitch
-                Position.X = 309.000000000000000000
                 Size.Height = 44.000000000000000000
               end
             end

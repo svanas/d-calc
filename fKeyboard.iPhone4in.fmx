@@ -1,0 +1,3 @@
+inherited frmKeyboard_iPhone4in: TfrmKeyboard_iPhone4in
+  DesignerMasterStyle = 0
+end

@@ -212,6 +212,8 @@ implementation
 {$R *.fmx}
 {$R *.iPhone47in.fmx IOS}
 {$R *.iPhone55in.fmx IOS}
+{$R *.iPhone.fmx IOS}
+{$R *.iPhone4in.fmx IOS}
 
 uses
   // Delphi
@@ -360,7 +362,7 @@ var
   S: string;
   I: Integer;
 begin
-  if AAppEvent = TApplicationEvent.EnteredBackground then
+  if AAppEvent in [TApplicationEvent.WillBecomeInactive, TApplicationEvent.EnteredBackground] then
     UpdateAppBadge
   else
   if AAppEvent = TApplicationEvent.BecameActive then

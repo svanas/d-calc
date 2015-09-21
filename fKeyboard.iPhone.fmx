@@ -1,0 +1,7 @@
+inherited frmKeyboard_iPhone: TfrmKeyboard_iPhone
+  ClientHeight = 460
+  DesignerMasterStyle = 0
+  inherited pnlCallout: TCalloutPanel
+    Size.Height = 460.000000000000000000
+  end
+end
