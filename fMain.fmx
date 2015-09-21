@@ -663,7 +663,7 @@ object frmMain: TfrmMain
               OnClick = btnBack2Click
             end
           end
-          object edtName: TClearingEdit
+          object edtName: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             TabOrder = 1
             Position.X = 160.000000000000000000
@@ -682,7 +682,7 @@ object frmMain: TfrmMain
             TextSettings.HorzAlign = Trailing
             Text = 'Insulin name:'
           end
-          object edtDuration: TClearingEdit
+          object edtDuration: TEdit
             Touch.InteractiveGestures = [LongTap, DoubleTap]
             TabOrder = 3
             KeyboardType = NumberPad
@@ -746,7 +746,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 2
               Text = 'Morning'
-              object edtTarget1: TClearingEdit
+              object edtTarget1: TEdit
                 Tag = 1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
@@ -774,7 +774,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 3
               Text = 'Day'
-              object edtTarget2: TClearingEdit
+              object edtTarget2: TEdit
                 Tag = 1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
@@ -802,7 +802,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 4
               Text = 'Evening'
-              object edtTarget3: TClearingEdit
+              object edtTarget3: TEdit
                 Tag = 1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
@@ -840,7 +840,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 8
               Text = 'Morning'
-              object edtCarb1: TClearingEdit
+              object edtCarb1: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
                 TabOrder = 0
@@ -867,7 +867,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 9
               Text = 'Day'
-              object edtCarb2: TClearingEdit
+              object edtCarb2: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
                 TabOrder = 0
@@ -894,7 +894,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 10
               Text = 'Evening'
-              object edtCarb3: TClearingEdit
+              object edtCarb3: TEdit
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
                 TabOrder = 0
@@ -931,7 +931,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 12
               Text = 'Morning'
-              object edtCorr1: TClearingEdit
+              object edtCorr1: TEdit
                 Tag = 1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
@@ -959,7 +959,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 13
               Text = 'Day'
-              object edtCorr2: TClearingEdit
+              object edtCorr2: TEdit
                 Tag = 1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
@@ -987,7 +987,7 @@ object frmMain: TfrmMain
               StyleLookup = 'listboxitemnodetail'
               TabOrder = 14
               Text = 'Evening'
-              object edtCorr3: TClearingEdit
+              object edtCorr3: TEdit
                 Tag = 1
                 Touch.InteractiveGestures = [LongTap, DoubleTap]
                 Align = MostRight
