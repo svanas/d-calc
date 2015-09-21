@@ -1,0 +1,89 @@
+inherited frmKeyboard_iPhone47in: TfrmKeyboard_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 0
+  inherited pnlCallout: TCalloutPanel
+    Size.Width = 363.000000000000000000
+    Size.Height = 647.000000000000000000
+    inherited rct1: TRoundRect
+      Size.Width = 110.000000000000000000
+      inherited btn1: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct2: TRoundRect
+      Position.X = 126.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn2: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct3: TRoundRect
+      Position.X = 244.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn3: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct4: TRoundRect
+      Size.Width = 110.000000000000000000
+      inherited btn4: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct5: TRoundRect
+      Position.X = 126.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn5: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct6: TRoundRect
+      Position.X = 244.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn6: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct7: TRoundRect
+      Size.Width = 110.000000000000000000
+      inherited btn7: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct8: TRoundRect
+      Position.X = 126.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn8: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct9: TRoundRect
+      Position.X = 244.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn9: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rctAC: TRoundRect
+      Size.Width = 110.000000000000000000
+      inherited btnAC: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rct0: TRoundRect
+      Position.X = 126.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btn0: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+    inherited rctOK: TRoundRect
+      Position.X = 244.000000000000000000
+      Size.Width = 110.000000000000000000
+      inherited btnOK: TButton
+        Size.Width = 110.000000000000000000
+      end
+    end
+  end
+end

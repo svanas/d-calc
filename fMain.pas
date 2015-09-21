@@ -210,6 +210,8 @@ var
 implementation
 
 {$R *.fmx}
+{$R *.iPhone47in.fmx IOS}
+{$R *.iPhone55in.fmx IOS}
 
 uses
   // Delphi
