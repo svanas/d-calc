@@ -6,7 +6,7 @@
         <MainSource>dcalc.dpr</MainSource>
         <Base>True</Base>
         <Config Condition="'$(Config)'==''">Release</Config>
-        <Platform Condition="'$(Platform)'==''">iOSSimulator</Platform>
+        <Platform Condition="'$(Platform)'==''">iOSDevice64</Platform>
         <TargetedPlatforms>1096</TargetedPlatforms>
         <AppType>Application</AppType>
     </PropertyGroup>
@@ -383,21 +383,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Release\dcalc" Configuration="Release" Class="ProjectOutput">
+                <DeployFile LocalName="Artwork\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
                     <Platform Name="iOSDevice32">
-                        <RemoteName>dcalc</RemoteName>
+                        <RemoteName>Default-667h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_29x29.png" Configuration="Debug" Class="iPhone_Spotlight29">
                     <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -407,42 +400,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSSimulator\Debug\dcalc.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Entitlements.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\morning64.png" Class="File">
-                    <Platform Name="Win32">
-                        <RemoteName>morning64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>morning64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents</RemoteDir>
-                        <RemoteName>morning64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="iOSDevice64\Release\dcalc.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
                     <Platform Name="iOSDevice64">
                         <RemoteName>dcalc</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_29x29.png" Configuration="Release" Class="iPhone_Spotlight29">
+                <DeployFile LocalName="iOSSimulator\Debug\dcalc.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
                     <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -463,15 +429,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Debug" Class="iPhone_Launch320">
                     <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <RemoteName>Default.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -487,9 +447,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Base\ResourceRules.plist" Configuration="Base" Class="ProjectiOSDeviceResourceRules">
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
                     <Platform Name="iOSDevice32">
-                        <RemoteName>ResourceRules.plist</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -499,18 +463,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPhone_Spotlight40">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_72x72.png" Configuration="Release" Class="iPad_AppIcon72">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\day64.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>day64.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -520,20 +481,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_29x29.png" Configuration="Release" Class="iPhone_Spotlight29">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="OSX32">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_640x960.png" Configuration="Release" Class="iPhone_Launch640">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -543,31 +492,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_2208x1242.png" Configuration="Release" Class="iPhone_Launch2208">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
                     <Platform Name="iOSDevice32">
-                        <RemoteName>Default.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Release\dcalc.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>dcalc</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -582,14 +508,10 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
+                <DeployFile LocalName="Artwork\glucose64.png" Configuration="Release" Class="File">
                     <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Release\dcalc.info.plist" Configuration="Release" Class="ProjectiOSInfoPList">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Info.plist</RemoteName>
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>glucose64.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -599,14 +521,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                <DeployFile LocalName="Artwork\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
                     <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -616,9 +533,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice64\Release\dcalc" Configuration="Release" Class="ProjectOutput">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>dcalc</RemoteName>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -628,8 +544,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -639,8 +555,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -650,42 +566,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSSimulator\Release\dcalc.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Entitlements.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SettingIcon_29x29.png" Configuration="Release" Class="iPad_Setting29">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_2048x1496.png" Configuration="Release" Class="iPad_Launch2048">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Landscape@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\DD.png" Class="File">
-                    <Platform Name="Win32">
-                        <RemoteName>DD.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>DD.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>DD.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -707,38 +590,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Base" Class="iPhone_AppIcon57">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_768x1024.png" Configuration="Base" Class="iPad_Launch768x1024">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Portrait~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
-                    <Platform Name="iOSDevice64">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_ApplicationIcon_144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
                     <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="dcalc.info.plist" Configuration="Release" Class="File">
-                    <Platform Name="iOSDevice64">
-                        <RemoteName>Info.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSDevice64\Release\dcalc.info.plist" Configuration="Release" Class="ProjectiOSInfoPList">
-                    <Platform Name="iOSDevice64">
-                        <Enabled>false</Enabled>
-                        <RemoteName>Info.plist</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -750,6 +609,680 @@
                 <DeployFile LocalName="Artwork\FM_LaunchImage_1242x2208.png" Configuration="Release" Class="iPhone_Launch1242">
                     <Platform Name="iOSDevice64">
                         <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\insulin64.png" Configuration="Release" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>insulin64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_76x76.png" Configuration="Release" Class="iPad_AppIcon76">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\dcalc.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_768x1004.png" Configuration="Release" Class="iPad_Launch768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Debug" Class="iPad_Setting58">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\evening64.png" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>evening64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>evening64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>evening64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\dcalc.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="All Platforms\Base\dcalc" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="All Platforms">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Base\dcalc.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\morning64.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>morning64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\dcalc.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Debug" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Release" Class="iPad_Setting58">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SettingIcon_29x29.png" Configuration="Debug" Class="iPad_Setting29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_100x100.png" Configuration="Release" Class="iPad_SpotLight100">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\dcalc" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\dcalc.info.plist" Configuration="Base" Class="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <Enabled>false</Enabled>
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\DD.png" Configuration="Release" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>DD.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\dcalc.dSYM" Configuration="Base" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Base" Class="iPad_Setting58">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Landscape.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\dcalc.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_768x1004.png" Configuration="Debug" Class="iPad_Launch768">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_1242x2208.png" Configuration="Release" Class="iPhone_Launch1242">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\insulin64.png" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>insulin64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>insulin64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>insulin64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice64\Release\dcalc.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice64\Debug\dcalc" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\dcalc" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\evening64.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>evening64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\carbs64.png" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>carbs64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>carbs64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>carbs64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Debug\dcalc" Configuration="Debug" Class="ProjectOutput_iOS32">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>dcalc.armv7</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\carbs64.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>carbs64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\dcalc" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\morning64.png" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>morning64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>morning64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>morning64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\morning64.png" Configuration="Release" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>morning64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_29x29.png" Configuration="Release" Class="iPhone_Spotlight29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_152x152.png" Configuration="Debug" Class="iPad_AppIcon152">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\DD.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>DD.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Base\ResourceRules.plist" Configuration="Base" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\carbs64.png" Configuration="Release" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>carbs64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_72x72.png" Configuration="Release" Class="iPad_AppIcon72">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_29x29.png" Configuration="Release" Class="iPhone_Spotlight29">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_120x120.png" Configuration="Release" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x960.png" Configuration="Release" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_2208x1242.png" Configuration="Release" Class="iPhone_Launch2208">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-Portrait@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\dcalc.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120">
+                    <Platform Name="iOSDevice32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice32\Release\dcalc.info.plist" Configuration="Release" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPad_SpotLight40">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice64\Release\dcalc" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>dcalc</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_50x50.png" Configuration="Debug" Class="iPad_SpotLight50">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SettingIcon_29x29.png" Configuration="Release" Class="iPad_Setting29">
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\dcalc.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-736h@3x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\DD.png" Class="File">
+                    <Platform Name="Win32">
+                        <RemoteName>DD.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>DD.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSDevice32">
+                        <RemoteDir>StartUp\Documents\</RemoteDir>
+                        <RemoteName>DD.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice64\Debug\dcalc.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\insulin64.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>insulin64.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Base" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSDevice32">
+                        <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_29x29.png" Configuration="Debug" Class="iPhone_Spotlight29">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSDevice64">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="dcalc.info.plist" Configuration="Release" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice64\Release\dcalc.info.plist" Configuration="Release" Class="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice64">
+                        <Enabled>false</Enabled>
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
+                    <Platform Name="iOSDevice32">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -781,32 +1314,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_76x76.png" Configuration="Release" Class="iPad_AppIcon76">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Release\dcalc.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Entitlements.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImage_640x960.png" Configuration="Release" Class="iPhone_Launch640">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Debug" Class="iPad_Setting58">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_768x1004.png" Configuration="Release" Class="iPad_Launch768">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -826,54 +1336,19 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_144x144.png" Configuration="Debug" Class="iPad_AppIcon144">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\evening64.png" Class="File">
-                    <Platform Name="Win32">
-                        <RemoteName>evening64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>evening64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
                     <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>evening64.png</RemoteName>
+                        <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSSimulator\Debug\dcalc.info.plist" Configuration="Debug" Class="ProjectiOSSimulatorInfoPList">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Info.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="All Platforms\Base\dcalc" Configuration="Base" Class="ProjectOutput">
-                    <Platform Name="All Platforms">
-                        <RemoteName>dcalc</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Landscape.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default-568h@2x.png</RemoteName>
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
+                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -904,9 +1379,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -915,21 +1390,16 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSSimulator\Base\dcalc.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Entitlements.plist</RemoteName>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>Default-667h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2008.png" Configuration="Debug" Class="iPad_Launch1536">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default-Portrait@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+                <DeployFile LocalName="Artwork\glucose64.png" Configuration="Debug" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>glucose64.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -939,22 +1409,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPhone_Spotlight40">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Debug\dcalc.info.plist" Configuration="Debug" Class="ProjectiOSDeviceInfoPList">
-                    <Platform Name="iOSDevice32">
-                        <Enabled>false</Enabled>
-                        <RemoteName>Info.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2008.png" Configuration="Release" Class="iPad_Launch1536">
+                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Debug" Class="iPad_Setting58">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-Portrait@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -970,18 +1426,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Release" Class="iPhone_AppIcon60">
+                <DeployFile LocalName="Artwork\day64.png" Configuration="Release" Class="File">
                     <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>day64.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Release" Class="iPad_Setting58">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="iOSDevice64\Debug\dcalc.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -996,13 +1449,10 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SettingIcon_29x29.png" Configuration="Debug" Class="iPad_Setting29">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_100x100.png" Configuration="Release" Class="iPad_SpotLight100">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="Artwork\evening64.png" Configuration="Release" Class="File">
+                    <Platform Name="iOSDevice64">
+                        <RemoteDir>StartUp\Documents</RemoteDir>
+                        <RemoteName>evening64.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1012,8 +1462,8 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSSimulator\Debug\dcalc" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="iOSSimulator">
+                <DeployFile LocalName="iOSDevice64\Debug\dcalc.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice64">
                         <RemoteName>dcalc</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
@@ -1024,10 +1474,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Base\dcalc.info.plist" Configuration="Base" Class="ProjectiOSDeviceInfoPList">
-                    <Platform Name="iOSDevice32">
-                        <Enabled>false</Enabled>
-                        <RemoteName>Info.plist</RemoteName>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default-667h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1042,31 +1491,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Base\dcalc.dSYM" Configuration="Base" Class="ProjectiOSDeviceDebug">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>dcalc</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x768.png" Configuration="Release" Class="iPad_Launch1024x768">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Landscape~ipad.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SettingIcon_58x58.png" Configuration="Base" Class="iPad_Setting58">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default-Landscape.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1076,26 +1503,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Debug\dcalc.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Entitlements.plist</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
                     <Platform Name="iOSDevice32">
                         <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_768x1004.png" Configuration="Debug" Class="iPad_Launch768">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1111,47 +1521,15 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_1242x2208.png" Configuration="Release" Class="iPhone_Launch1242">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default-736h@3x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\insulin64.png" Class="File">
-                    <Platform Name="Win32">
-                        <RemoteName>insulin64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>insulin64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>insulin64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImageLandscape_2048x1496.png" Configuration="Debug" Class="iPad_Launch2048">
                     <Platform Name="iOSSimulator">
                         <RemoteName>Default-Landscape@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="iOSDevice64\Release\dcalc.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
-                    <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1166,46 +1544,9 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="iOSDevice32\Base\dcalc" Configuration="Base" Class="ProjectOutput">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>dcalc</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="$(BDS)\Redist\iossimulator\libPCRE.dylib" Class="DependencyModule">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_LaunchImage_640x960.png" Configuration="Release" Class="iPhone_Launch640">
                     <Platform Name="iOSDevice64">
                         <RemoteName>Default@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\carbs64.png" Class="File">
-                    <Platform Name="Win32">
-                        <RemoteName>carbs64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>carbs64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                    <Platform Name="iOSDevice32">
-                        <RemoteDir>StartUp\Documents\</RemoteDir>
-                        <RemoteName>carbs64.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72">
-                    <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1221,30 +1562,13 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Release" Class="iPhone_AppIcon114">
                     <Platform Name="iOSDevice64">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>Default-568h@2x.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                <DeployFile LocalName="Artwork\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80">
                     <Platform Name="iOSSimulator">
-                        <RemoteName>Default-568h@2x.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
@@ -1265,40 +1589,49 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="iOSDevice64\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice64">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="Artwork\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114">
-                    <Platform Name="iOSDevice32">
-                        <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
                     <Platform Name="iOSDevice64">
-                        <RemoteName>Default.png</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
-                    <Platform Name="iOSSimulator">
-                        <RemoteName>Default.png</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_144x144.png" Configuration="Release" Class="iPad_AppIcon144">
+                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Artwork\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87">
-                    <Platform Name="iOSSimulator">
-                        <Overwrite>true</Overwrite>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
                     </Platform>
-                </DeployFile>
-                <DeployClass Name="ProjectiOSDeviceResourceRules">
                     <Platform Name="iOSDevice64">
                         <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="iOSDevice32">
                         <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
                     </Platform>
                 </DeployClass>
                 <DeployClass Name="ProjectOSXResource">
@@ -1662,27 +1995,12 @@
                         <Operation>1</Operation>
                     </Platform>
                 </DeployClass>
-                <DeployClass Name="DependencyModule">
-                    <Platform Name="Win32">
-                        <Operation>0</Operation>
-                        <Extensions>.dll;.bpl</Extensions>
-                    </Platform>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
                     <Platform Name="iOSDevice64">
                         <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                    <Platform Name="OSX32">
-                        <RemoteDir>Contents\MacOS</RemoteDir>
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
                     </Platform>
                     <Platform Name="iOSDevice32">
                         <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
-                    </Platform>
-                    <Platform Name="iOSSimulator">
-                        <Operation>1</Operation>
-                        <Extensions>.dylib</Extensions>
                     </Platform>
                 </DeployClass>
                 <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
