@@ -118,6 +118,8 @@ type
     tmrWarning: TTimer;
     lbiAppBadge: TListBoxItem;
     chkAppBadge: TSwitch;
+    lbiUnits: TListBoxItem;
+    cboUnits: TComboBox;
     procedure btnGlucoseClick(Sender: TObject);
     procedure btnCarbsClick(Sender: TObject);
     procedure TabControlChange(Sender: TObject);
@@ -150,6 +152,7 @@ type
     procedure tmrClipboardTimer(Sender: TObject);
     procedure tmrWarningTimer(Sender: TObject);
     procedure chkAppBadgeSwitch(Sender: TObject);
+    procedure cboUnitsChange(Sender: TObject);
   private
     FLog: TLog;
     FLock: Integer;
@@ -186,6 +189,9 @@ type
 
     function GetLog: TLog;
     procedure LogChange(Sender: TObject);
+
+    function MMOL2REAL(Value: REAL): REAL;
+    function REAL2MGDL(Value: REAL): Integer;
 
     function GetIOB: string;
     function Calculate: Integer;
@@ -339,7 +345,10 @@ end;
 
 procedure TFrmMain.SetGlucose(Value: REAL);
 begin
-  btnGlucose.Text := Format('%.1f', [Value], FormatSettingsFloat);
+  case Settings.GlucoseUnit of
+    guMMOL: btnGlucose.Text := Format('%.1f', [Value], FormatSettingsFloat);
+    guMGDL: btnGlucose.Text := Format('%.0f', [Value], FormatSettingsFloat);
+  end;
 end;
 
 procedure TfrmMain.Clear;
@@ -486,6 +495,20 @@ begin
     Result := Format(IOB, [GetLog.IOB, HourOf(Remaining), MinuteOf(Remaining)], FormatSettingsFloat);
 end;
 
+function TfrmMain.MMOL2REAL(Value: REAL): REAL;
+begin
+  Result := Value;
+  if Settings.GlucoseUnit = guMGDL then
+    Result := Round(Value * 18.0182);
+end;
+
+function TfrmMain.REAL2MGDL(Value: REAL): Integer;
+begin
+  Result := Round(Value);
+  if Settings.GlucoseUnit = guMMOL then
+    Result := Round(Value * 18.0182);
+end;
+
 function TfrmMain.Calculate: Integer;
 var
   R: REAL;
@@ -498,7 +521,7 @@ begin
   Result := 0;
 
   R := Glucose;
-  if (R < 4) or (R > 10) then
+  if (R < MMOL2REAL(4)) or (R > MMOL2REAL(10)) then
     btnGlucose.TextSettings.FontColor := TAlphaColorRec.Darkred
   else
     btnGlucose.TextSettings.FontColor := TAlphaColorRec.Null;
@@ -576,6 +599,8 @@ begin
   try
     if TabControl.ActiveTab = tabCalculate then
     begin
+      lblGlucose2.Text := GlucoseUnitText[Settings.GlucoseUnit];
+
       Keyboard.Animations := Settings.Animations;
 
       cboInsulin.BeginUpdate;
@@ -625,6 +650,8 @@ begin
       edtCorr1.Text := Format('%.1f', [Settings.CorrF[itMorning]], FormatSettingsFloat);
       edtCorr2.Text := Format('%.1f', [Settings.CorrF[itDay]], FormatSettingsFloat);
       edtCorr3.Text := Format('%.1f', [Settings.CorrF[itEvening]], FormatSettingsFloat);
+
+      cboUnits.ItemIndex := Ord(Settings.GlucoseUnit);
 
       chkIOB.IsChecked        := Settings.IOB;
       chkAppBadge.IsChecked   := Settings.AppBadge;
@@ -742,8 +769,16 @@ begin
       Keyboard.Button := nil
     else
     begin
-      Keyboard.Digits      := 2;
-      Keyboard.Decimals    := 1;
+      case Settings.GlucoseUnit of
+        guMMOL: begin
+          Keyboard.Digits      := 2;
+          Keyboard.Decimals    := 1;
+        end;
+        guMGDL: begin
+          Keyboard.Digits      := 3;
+          Keyboard.Decimals    := 0;
+        end;
+      end;
       Keyboard.OnCalculate := OnCalculate;
       Keyboard.Button      := TButton(Sender);
       Calculate;
@@ -845,7 +880,7 @@ begin
 {$IFDEF IOS}
   SharedApplication.openURL(StrToNSURL(
     Format('diabetesdiary://add/version/1/glucose:%s/carbs:%d/insulin:%d/insulin_type:%s',
-    [IntToStr(Round(Glucose * 18.0182)), Carbs, nUnits, lblInsulinName.Text])
+    [IntToStr(REAL2MGDL(Glucose)), Carbs, nUnits, lblInsulinName.Text])
   ));
 {$ENDIF}
 
@@ -924,7 +959,7 @@ procedure TfrmMain.edtTarget1Exit(Sender: TObject);
 var
   T: REAL;
 begin
-  T := StrToFloatDef(edtTarget1.Text, TARGET1, FormatSettingsFloat);
+  T := StrToFloatDef(edtTarget1.Text, MMOL2REAL(TARGET1), FormatSettingsFloat);
   edtTarget1.Text := Format('%.1f', [T], FormatSettingsFloat);
   Settings.Target[itMorning] := StrToFloat(edtTarget1.Text, FormatSettingsFloat);
 end;
@@ -933,7 +968,7 @@ procedure TfrmMain.edtTarget2Exit(Sender: TObject);
 var
   T: REAL;
 begin
-  T := StrToFloatDef(edtTarget2.Text, TARGET2, FormatSettingsFloat);
+  T := StrToFloatDef(edtTarget2.Text, MMOL2REAL(TARGET2), FormatSettingsFloat);
   edtTarget2.Text := Format('%.1f', [T], FormatSettingsFloat);
   Settings.Target[itDay] := StrToFloat(edtTarget2.Text, FormatSettingsFloat);
 end;
@@ -942,7 +977,7 @@ procedure TfrmMain.edtTarget3Exit(Sender: TObject);
 var
   T: REAL;
 begin
-  T := StrToFloatDef(edtTarget3.Text, TARGET3, FormatSettingsFloat);
+  T := StrToFloatDef(edtTarget3.Text, MMOL2REAL(TARGET3), FormatSettingsFloat);
   edtTarget3.Text := Format('%.1f', [T], FormatSettingsFloat);
   Settings.Target[itEvening] := StrToFloat(edtTarget3.Text, FormatSettingsFloat);
 end;
@@ -1013,6 +1048,12 @@ procedure TfrmMain.chkAnimationsSwitch(Sender: TObject);
 begin
   if not Locked then
     Settings.Animations := chkAnimations.IsChecked;
+end;
+
+procedure TfrmMain.cboUnitsChange(Sender: TObject);
+begin
+  if cboUnits.ItemIndex > -1 then
+    Settings.GlucoseUnit := TGlucoseUnit(cboUnits.ItemIndex);
 end;
 
 { TfrmMain.tabSettings.tabInsulins }

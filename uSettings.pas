@@ -11,6 +11,7 @@ uses
   uDatabase;
 
 type
+  TGlucoseUnit = (guMMOL, guMGDL);
   TInsulinTime = (itMorning, itDay, itEvening);
 
   TSettings = class
@@ -37,6 +38,9 @@ type
     function GetCorrF(Time: TInsulinTime): REAL;
     procedure SetCorrF(Time: TInsulinTime; Value: REAL);
 
+    function GetGlucoseUnit: TGlucoseUnit;
+    procedure SetGlucoseUnit(Value: TGlucoseUnit);
+
     function GetQuery: TFDQuery;
     function GetDatabase: TDatabase;
     procedure AfterConnect(Sender: TObject);
@@ -52,6 +56,7 @@ type
     property AppBadge: Boolean read GetAppBadge write SetAppBadge;
     property Target[Time: TInsulinTime]: REAL read GetTarget write SetTarget;
     property Animations: Boolean read GetAnimations write SetAnimations;
+    property GlucoseUnit: TGlucoseUnit read GetGlucoseUnit write SetGlucoseUnit;
 
     property CarbF[Time: TInsulinTime]: Integer read GetCarbF write SetCarbF;
     property CorrF[Time: TInsulinTime]: REAL read GetCorrF write SetCorrF;
@@ -67,6 +72,9 @@ const
   TARGET1 = 5.8;
   TARGET2 = 5.8;
   TARGET3 = 8.0;
+
+const
+  GlucoseUnitText: array[TGlucoseUnit] of string = ('mmol/L', 'mg/dL');
 
 function FormatSettingsFloat: TFormatSettings;
 function GetInsulinTime: TInsulinTime;
@@ -301,6 +309,41 @@ begin
       Query.FieldByName('CORR3').AsFloat := Value;
   finally
     Query.Post;
+  end;
+end;
+
+function TSettings.GetGlucoseUnit: TGlucoseUnit;
+var
+  F: TField;
+begin
+  Result := guMMOL;
+  F := Query.FindField('GlucoUnit');
+  if Assigned(F) then
+    Result := TGlucoseUnit(F.AsInteger);
+end;
+
+procedure TSettings.SetGlucoseUnit(Value: TGlucoseUnit);
+var
+  F: TField;
+begin
+  F := Query.FindField('GlucoUnit');
+
+  if not Assigned(F) then
+    if Database.Execute('ALTER TABLE SETTINGS ADD COLUMN GlucoUnit INTEGER') > 0 then
+    begin
+      Database.Execute(Format('UPDATE SETTINGS SET GlucoUnit = %d', [Ord(Value)]));
+      Database.Connection.Close;
+      EXIT;
+    end;
+
+  if Assigned(F) then
+  begin
+    Query.Edit;
+    try
+      F.AsInteger := Ord(Value);
+    finally
+      Query.Post;
+    end;
   end;
 end;
 
