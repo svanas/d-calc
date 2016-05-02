@@ -2,6 +2,8 @@
 
 d-calc is a bolus calculator for type 1 diabetics using an insulin pen (not an insulin pump).
 
+![](https://github.com/svanas/d-calc/blob/master/Screenshots/3.5%20inch%20(iPhone%204).jpg)
+
 ## Introduction
 
 Once configured, start the app, input your blood glucose reading, input your estimated carbohydrate intake and it will suggest a bolus based on that information.
