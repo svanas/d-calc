@@ -16,7 +16,7 @@ Started in 2012, d-calc is a bolus calculator for your iPhone. The project was o
 
 In 2014, the project was re-written in Delphi XE6. The new version added support for IOB (insulin on board), and an application badge (for units of insulin on board). It ran on iOS7 and iOS8.
 
-d-calc integrates with Chris Bowley's [Diabetes Diary](https://itunes.apple.com/en/app/diabetes-diary/id308154469?mt=8) (available separately on the App Store).
+d-calc integrates with Chris Bowley's [Diabetes Diary](https://itunes.apple.com/us/app/diabetes-diary/id308154469?mt=8) (available separately on the App Store).
 
 In 2015, Apple pulled d-calc from the App Store because it is out of compliance with guideline 22.9:
 
